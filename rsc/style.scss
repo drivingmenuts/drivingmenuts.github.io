@@ -1,0 +1,50 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald&display=swap');
+
+$content: "Montserrat", sans-serif;
+$headers: "Oswald", sans-serif;
+
+body {
+  color: $gray-700;
+  font-family: $content;
+  font-size: .9em;
+  margin-top: 2vh;
+  margin-bottom: 10vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headers;
+  font-size: 1.8em;
+  margin-bottom: 0.2em;
+
+  .subtitle {
+    font-size: 80%;
+  }
+}
+
+h2, h3, h4, h5, h6 {
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+#subtitle:before {
+  content: ' ';
+  clear: right;
+  display: block;
+}
+
+.footnote {
+  font-size: 0.8em;
+}
+
+.headshot {
+  border-radius: 1em;
+}
+
+.icon {
+  height: 1em;
+  width: 1em;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "profile",
+  "version": "1.0.0",
+  "description": "My github profile page",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "clean": "rm -rf lib/*",
+    "test:img": "cp rsc/headshot.jpg lib/headshot.jpg && cp rsc/*.svg lib/",
+    "dist:img": "cp rsc/headshot.jpg lib/headshot.jpg && cp rsc/*.svg lib/",
+    "test:css": "sass rsc/style.scss lib/style.css",
+    "dist:css": "sass -s compressed rsc/style.scss lib/style.min.css",
+    "test:all": "npm run clean && npm run test:img && npm run test:css",
+    "finalize": "npm run clean && npm run dist:img && npm run dist:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drivingmenuts/drivingmenuts.github.io.git"
+  },
+  "author": "albert freeman <albert.freeman@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drivingmenuts/drivingmenuts.github.io/issues"
+  },
+  "homepage": "https://github.com/drivingmenuts/drivingmenuts.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.4.1"
+  }
+}
