@@ -1,34 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Albert Freeman, Senior Developer</title>
-    <meta name="description" content="My personal profile page on Github.">
-    <meta name="keywords" content="developer, database, linux, unix, apache, mysql, php, python, admin, macos, osx">
-    <link rel="stylesheet" href="lib/style.min.css">
+    <title>Gulp</title>
+    <link href="lib/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            line-height: 1.2em;
+        }
+        .page {
+            height: 100vh;
+        }
+        #main {
+            background: url(lib/bg-main.jpg);
+            background-size: cover;
+        }
+        #resources {
+            background: url(lib/bg-resources.jpg);
+            background-size: cover;
+        }
+        .jumbotron {
+            margin-top: 5em;
+            opacity: 75%;
+            border-radius: 1em;
+            z-index: 1;
+            padding: 1.2em;
+        }
+        #main .jumbotron {
+            background: white;
+        }
+        h1 {
+            font-size: 1.8em;
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .subtitle::before {
+            content: '\A';
+            white-space: pre;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        #main .credit {
+            color: white;
+            font-size: 0.8rem;
+            position: absolute;
+            bottom: 2em;
+            right: 4em;
+
+        }
+
+        #main .credit a {
+            color: white;
+            z-index: -1;
+        }
+    </style>
 </head>
-<body>
-<div id="profile" class="container-fluid">
-    <div class="row justify-content-center">
-        <div class="col-sm col-md-2">
-            <img src="lib/headshot.jpg" class="img-fluid headshot" alt="Image of Albert Freeman (me)" role="img">
-            <h1>Albert Freeman* <span id="subtitle" class="subtitle">Senior Developer</span></h1>
-            <hr>
-            <h2>Contact Me:</h2>
-            <p><img class="icon" src="lib/globe2.svg" alt="Homepage" role="img"> https://drivingmenuts.github.io<br>
-            <img class="icon" src="lib/phone-vibrate.svg" alt="Mobile" role="img"></i> 512-789-8649<br>
-            <img class="icon" src="lib/envelope.svg" alt="Email Address" role="img"> albert.freeman@gmail.com</p>
-            <h2>Professional Interests:</h2>
-            <p>Databases, UI/UX, LAMP, Python, System Admin, Mac OS, Linux/UNIX</p>
-            <h2>Things I Use:</h2>
-            <p>Affinity Designer &amp; Photo, Jetbrains suite, Sass, vim, VSCodium, Zoom**</p>
-            <h2>Other:</h2>
-            <p>Pathfinder, Starfinder, DaVinci Resolve, Logic Pro, Sci-Fi</p>
-            <hr>
-            <p class="footnote">* Not my real hair.<br>
-            ** Reluctantly</p>
+<body class="container-fluid">
+<div id="main" class="page">
+    <div id="profile" class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 offset-md-1 jumbotron">
+                <h1>Albert Freeman <span id="subtitle" class="subtitle">Software Developer</span></h1>
+                <hr>
+                <h2>Contact Me:</h2>
+                <p><img class="icon" src="lib/globe.svg" alt="Homepage" role="img"> https://drivingmenuts.github.io<br>
+                    <img class="icon" src="lib/phone-vibrate.svg" alt="Mobile" role="img"> 512-789-8649<br>
+                    <img class="icon" src="lib/envelope.svg" alt="Email Address" role="img">
+                    albert.freeman@gmail.com<br>
+                    <img class="icon" src="lib/filetype-pdf.svg" alt="Resume" role="img"> <a
+                            href="lib/Resume-Albert-Freeman.pdf">Resume</a></p>
+                <h2>Professional Interests:</h2>
+                <p>Databases, UI/UX, LAMP, Python, System Admin, Mac OS, Linux/UNIX</p>
+                <h2>Things I Use:</h2>
+                <p>Affinity Designer &amp; Photo, Jetbrains suite, Sass, vim, VSCodium, Zoom</p>
+                <h2>Other:</h2>
+                <p>Pathfinder, Starfinder, DaVinci Resolve, Logic Pro, Sci-Fi</p>
+            </div>
         </div>
+    </div>
+    <div class="credit">
+        from a photo by <a href="https://unsplash.com/s/photos/steven-wright" target="new">Steven Wright on Unsplash</a>
     </div>
 </div>
 </body>
